@@ -1,0 +1,223 @@
+
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SM BigCat Pedia</title>
+	<link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  
+  <body id="bg1">
+   <div style="overflow: auto">
+     <div class="header">
+	  <a onclick="window.location ='login.html'" class="a" href="#"><i class="fa fa-user"></i> Logout</a> 
+	  <a class="a" href="index.html"> Home</a>
+	  <a class="a" href="#"> Create Account</a> 
+	  <a class="a" href="#"> Edit</a> 
+	  <a class="a" href="#"> Donate</a> 
+	  <a class="a" href="#More"> More</a> 
+   	 </div>
+     
+	 
+	
+	<div id="div" class="alert">
+        <span class="closebtn">&times;</span>  
+        <strong>Logined!</strong> Now you are logined.
+    </div>
+	  <div id="div2" class="alert">
+        <span class="closebtn">&times;</span>  
+        <strong>Logout!</strong> Do you want to logout?
+		<a class="link-stiger" onclick="window.location = 'login.html'" href="#"> Yes</a>
+    </div>
+	<div id="myModal2" class="setting">
+	    <span class="closebtn2">&times;</span>  
+	    <h2 align="center">Setting</h2>
+		<h4> Background</h4>
+		<a class="link-stiger" onclick="document.getElementById('bg1').style.background = 'white'
+		;document.getElementById('bg1').style.color = 'black';document.getElementById('myP1').style.background = 'white'
+		;document.getElementById('myP1').style.color = 'black'" style="color:white" href="#"> White</a>,	
+		<a class="link-stiger" onclick="document.getElementById('bg1').style.background = 'lightblue'
+		;document.getElementById('bg1').style.color = 'black'" style="color:blue" href="#"> Lightblue</a>,	
+		<a class="link-stiger" onclick="document.getElementById('bg1').style.background = 'yellow'
+		;document.getElementById('bg1').style.color = 'black'" style="color:yellow" href="#"> Yellow</a>	,
+		<a class="link-stiger" onclick="document.getElementById('bg1').style.background = 'black';
+		document.getElementById('bg1').style.color = 'white'" style="color:black" href="#"> Black(Dark Mode)</a>,	
+		<a class="link-stiger" onclick="document.getElementById('bg1').style.background = 'lightgreen'
+		;document.getElementById('bg1').style.color = 'black'" style="color:green" href="#"> Lightgreen</a>
+		<h4> Font Style</h4>
+		<a class="link-stiger" onclick="document.getElementById('bg1').style.fontFamily = 'arial'" 
+		style="font-family: arial" href="#"> Arial(Default)</a>,
+		<a class="link-stiger" onclick="document.getElementById('bg1').style.fontFamily = 'garamond'" 
+		style="font-family: garamond" href="#"> Garamond</a>,
+		<a class="link-stiger" onclick="document.getElementById('bg1').style.fontFamily = 'verdana'" 
+		style="font-family: verdana" href="#"> Verdana</a>
+		<h4> Font Size</h4>
+		<a onclick="myFunction17()" class="link-stiger" href="#"> XX-Large</a>,
+		<a onclick="myFunction15()" class="link-stiger" href="#"> X-Large</a>,
+		<a onclick="myFunction12()" class="link-stiger" href="#"> Large</a>,
+		<a onclick="myFunction14()" class="link-stiger" href="#"> Medium(Default)</a>,
+		<a onclick="myFunction13()" class="link-stiger" href="#"> Small</a>,
+		<a onclick="myFunction16()" class="link-stiger" href="#"> X-Small</a>
+		
+		
+		
+	</div>
+	  
+	 <div class="menu">
+	   <h2 class="h" id="myBtn" align="left"> bigcatpedia<font color="#000">.org</font></h2>
+	    <br>
+	    <h4><b>Tab Navigation</b></h4>
+        <a onclick="document.getElementById('div2').style.display = 'block'; return false" href="#">Logout</a>
+        <a href="index.html">Home</a>
+        <a onclick="alert('Already Created and Logined.')" href="#">Create Account</a>
+	    <a onclick="myFunction31()" href="#">Edit</a>
+		<a href="#">Donate</a>
+		<a id="More" href="#Main">Main Content</a>
+		<a onclick="document.getElementById('myModal2').style.display = 'block';" href="#">Setting</a>
+		<a onclick="myFunction32()" contenteditable="false" href="#"> Save</a>
+		<a onclick="document.getElementById('div').style.display = 'block'" href="#"> Messages</a>
+		<h4><b>Language</b></h4>
+		<a href="index.hindi.html">Hindi</a>
+        <a href="#">Marathi</a>
+        <a href="#">Gujrati</a>
+		<a href="#">Urdu</a>
+		<a href="#">American English</a>
+		<h4><b>Tools</b></h4>
+		<a href="version.html"> Version Info</a>
+		<a href="#"> Learn to Edit</a>
+		
+		<h4><b>Save As</b></h4>
+		<a onclick="window.print();return false;" href="#"> Print/PDF</a>
+		<a onclick="alert('Not Available')" href="#"> Source Code</a>
+		<h4><b>Contact us</b></h4>
+		<a href="mailto: arpanamishra89@gmail.com"> Mail us</a>
+		<a href="tel:+91 9522087547"> Phone Number</a>
+		<a href="#"> SMS</a>
+	 </div>
+	 
+	  
+	  
+	 <div id="myP1" class="main">
+	  
+	  <h2 id="Main" style="font-family: verdana">Welcome to <b>bigcatpedia.org</b> 
+	  <a target="_blank" href="https://www.youtube.com/watch?v=O2Cv6enN4tw">
+	  <i id="yt" style="font-size:32px;float: right" class="fa fa-youtube"></i></h2>
+	  </a>
+	  <hr>
+       <p id="demo1">A free encyclopedia like Wikipedia which gives information about Big Cats. Here you can read or edit the informations. The most popular
+	     edit will be selected to be published on BIG CAT Pedia. We will try our best to share the knowledge of Big Cats.</p>
+       <p  id="demo2">If you want to rate us please mail us to <code><b><i>bcpediaorg2030@gmail.com</i></b></code>. In this encyclopedia there have 5 parts which divides the information's 
+	    main content. Contents are :- <br>
+	     <ul>
+	      <b><li> Defination</li> 
+	      <li> History</li> 
+	      <li> Size</li>
+	      <li> Etymology</li>
+	      <li> Behavior and Echology</li></b>
+	     </ul> 
+              	<hr>
+	   </p>
+	   <p id="demo3"><b>*</b> If you want to find any big cat's information first you have to open our website
+	   and then click on Logo. Now you will saw a modal with search 
+	   bar. Now Search and get information.
+	   </p>
+	   <br><br>
+	   <h3  id="demo5" style="color:black"> See also:-<hr></h3>
+	   <ul  id="demo6">
+	     <li style="padding: 5px;font-size: 13.5px"><b>Northern Asia:</b> <a target="_blank" class="link-stiger"  href="Siberian-Tiger.html"> Siberian Tiger</a>,
+		 <a class="link-stiger"  href="#"> Amur Leopard</a> </li>
+	     <li style="padding: 5px;font-size: 13.5px"><b>Belize Jaguar:</b> <a class="link-stiger"  href="#"> Also called North American Jaguar</a></li>
+		 <li style="padding: 5px;font-size: 13.5px"><b>Wikipedia:</b> <a class="link-stiger"  href="#"> Wikipedia awarded bigcatpedia.org</a></li>
+		 <li style="padding: 5px;font-size: 13.5px"> <a class="link-stiger"  href="#"> Cheetah</a>
+	   </ul>	 
+	 </div>
+	 
+	 <div id="demo4" class="info">
+	  <br><br>
+	   <h3 style="font-family: verdana"> BigCat Pedia</h3>
+	   <img src="1sm.png">
+	   <br><br>
+	   <div class="s">
+	     Specification:-
+	   </div>
+	  <table>
+	   <tr>
+	    <td><b> Founded</b></td>
+		<td></td>
+		<td></td>
+		<td> 1 March 2021</td>
+	   </tr>
+	   <tr>
+	    <td><b>Country of origin </b></td>
+		<td></td>
+		<td></td>
+		<td> India</td>
+	   </tr>
+	   <tr>
+	    <td><b>Owner</b></td>
+		<td></td>
+		<td></td>
+		<td>SM Technology</td>
+	   </tr> 
+	   <tr>
+	    <td><b>URL</b></td>
+		<td></td>
+		<td></td>
+		<td>bigcatpedia.org</td>
+	   </tr>
+	   <tr>
+	    <td><b>Created by</b></td>
+		<td></td>
+		<td></td>
+		<td>CEO Shaurya Mishra</td>
+	   </tr>
+	   <tr>
+	    <td><b>Written in</b></td>
+		<td></td>
+		<td></td>
+		<td>HTML, CSS, JAVA and </td>
+	   </tr>
+	   <tr>
+	    <td><b> </b></td>
+		<td></td>
+		<td></td>
+		<td>PHP</td>
+	   </tr>
+	  </table>
+	 </div>
+	
+   </div>
+   <div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+   
+    <span style="color: transparent;" class="close">&times;</span>
+    <input  id="myInput" onkeyup="myFunction()" autocomplete="off" type="text" placeholder="Search big cats..."> 
+	<ul id="myUL">
+  <li><a href="Siberian-Tiger.html#Main">Siberian Tiger</a></li>
+  <li><a href="Bengal-Tiger.html#Main">Bengal Tiger</a></li>
+  <li><a href="#">Sumatran Tiger</a></li>
+  <li><a href="#">African Lion</a></li>
+  <li><a href="#">Asiatic Lion</a></li>
+  <li><a href="#">Amazonal Jaguar</a></li>
+  <li><a href="#">North American Jaguar</a></li>
+  <li><a href="#">Pantanal Jaguar</a></li>
+  <li><a href="#">Cougar</a></li>
+  <li><a href="#">Indian Leopard</a></li>
+  <li><a href="#">African Leopard</a></li>
+  <li><a href="#">Amur Leopard</a></li>
+  <li><a href="#">Arabian Leopard</a></li>
+  <li><a href="#">Persian Leopard</a></li>
+  <li><a href="#">Cheetah</a></li>
+  <li><a href="#">Snow Leopard</a></li>
+  <li><a href="#">European Lynx</a></li> 
+  <li><a href="#">North American Lynx</a></li>
+  <li><a href="#">Clouded Leopard</a></li>
+     </ul>
+  </div>
+
+</div>
+  </body>
+  <script src="script.js"></script>
+</html>

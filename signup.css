@@ -1,0 +1,236 @@
+* {
+            padding: 0;
+            margin: 0;
+            /*box-size:border-box;*/
+        }
+        body {
+            background: #ffff;
+			font-family: arial;
+        }
+		
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 80px;
+  height: 80px;
+  margin: -76px 0 0 -76px;
+  border: 10px solid #f3f3f3;
+  border-radius: 500%;
+  border-top: 10px solid #3498db;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#pageloader
+{
+  background: rgba( 255, 255, 255, 0.8 );
+  display: none;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+}
+
+#pageloader img
+{
+  left: 50%;
+  margin-left: -32px;
+  margin-top: -32px;
+  position: absolute;
+  top: 50%;
+}
+
+
+        #container {
+            width: 300px;
+            margin: 0 auto;
+            margin-top: 150px;
+        }
+        .tabs {
+            display: table-cell;
+            width: 40%;
+            background-color: rgba(11, 177, 224, 0.82);
+            padding: 10px;
+            float: left;
+            text-align: center;
+            vertical-align: middle;
+            border: 2px solid #ffffff;
+            border-bottom: 0px;
+            position: relative;
+            font-size: 16px;
+            color: #ffffff;
+        }
+        .tabs:hover, p{
+            cursor: pointer;
+        }
+
+        #lt {
+            background-color: rgb(12, 132, 189);
+        }
+        #cont {
+            width: 100%;
+			opacity: 1;
+            height: 300px;
+            background-color: #ffff;
+            border: 2px solid #ffffff;
+        }
+
+        input{
+            display: block;
+            width: 260px;
+            margin: 10px 1px;
+            padding: 10px;
+            color: black;
+            outline: 2px solid #ffffff;
+        }
+		
+		input:focus {
+			background: #00FEF4;
+			outline: 2px solid #ffffff;
+			color: #000;
+			border: 2px solid transparent;
+		}
+
+        .submit {
+            width: 283px;
+            color: #6e6e6e;margin: 10px 1px;
+			padding: 10px 12px;
+        }
+		
+		
+
+        #clear {
+            clear: both;
+        }
+
+        .comm {
+            position: absolute;
+            visibility: hidden;
+        }
+        #login {
+            visibility: visible;
+        }
+
+        h3 {
+            display: table-cell;
+            vertical-align: middle;
+            padding: 10px 0px;
+            font-size: 1.5em;
+            color: #000;
+        }
+		
+
+        #forgot h3 {
+            display: block;
+			font-size: 15px;
+            margin-top: 30px;
+            text-align: left;
+        }
+
+        #forgot div {
+            margin-top: 30px;
+        }
+        p {
+            padding: 10px 0px;
+            font-size: 14px;
+            color: #000;
+        }
+		p:hover {
+            text-decoration: underline;
+        }
+		
+		.header {
+	padding: 10px;
+	background: #Fff;
+	font-family: arial;
+	right: 0;
+	top: 0;
+	position:fixed;
+	border-radius: 5px;
+	box-shadow: 0 1px 5px 0 #ddd;
+}
+
+.a {
+	color: #000;
+	text-decoration: none;
+	padding: 10px;
+	
+}
+.a:hover {
+	color: #00AAFF;
+	text-decoration: underline;
+}
+.a:active {
+	color: #002DFF;
+}
+.alert {
+  padding: 20px;
+  background-color: #ffff;
+  color: #000;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 999;
+  opacity: 1;
+  user-select: none;
+  cursor: pointer;
+  font-family: verdana;
+  font-size: 15px;
+  top: 12px;
+  box-shadow: 0px 2px 3px #ACB1B0;
+  border-radius: 15px;
+  transition: 0.2s ease;
+  animation: ripple-animation 2s;
+}
+ 
+ .alert:hover {
+	 box-shadow: 0px 4px 6px #ACB1B0;
+ }
+  
+ .alert:active {
+	 background-color: #E8EBEB;
+ }
+
+.closebtn {
+  margin-left: 15px;
+  color: black;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+}
+.closebtn:active {
+	color: #ddd;
+}

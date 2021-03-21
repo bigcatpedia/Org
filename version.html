@@ -1,0 +1,122 @@
+
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SM BigCat Pedia</title>
+	<link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  
+  <body oncontextmenu="javascript:alert('Right click not allowed for this webpage.');return false;">
+   <div style="overflow: auto">
+     <div class="header">
+	  <a onclick="alert('Error while logout')" class="a" href="#"><i class="fa fa-user"></i> Logout</a> 
+	  <a class="a" href="index.html"> Home</a>
+	  <a class="a" href="#"> Create Account</a> 
+	  <a class="a" href="#"> Edit</a> 
+	  <a class="a" href="#"> Donate</a> 
+	  <a class="a" href="#More"> More</a> 
+   	 </div>
+     
+	 
+	
+	
+	  
+	  <div class="menu">
+	   <h2 class="h" id="myBtn" align="left"> bigcatpedia<font color="#000">.org</font></h2>
+	    <br>
+	    <h4><b>Tab Navigation</b></h4>
+        <a onclick="alert('Error while logout')" href="#">Logout</a>
+        <a href="index.html">Home</a>
+        <a onclick="alert('Already Created and Logined.')" href="#">Create Account</a>
+	    <a onclick="alert('Not allowed for this page')" href="#">Edit</a>
+		<a href="#">Donate</a>
+		<a id="More" href="#Main">Main Content</a>
+		<a onclick="alert('Not allowed for this page')" href="#">Setting</a>
+		<a onclick="alert('Not allowed for this page')" contenteditable="false" href="#"> Save</a>
+		<a onclick="alert('Not allowed for this page')" href="#"> Messages</a>
+		<h4><b>Language</b></h4>
+		<a href="#">Hindi</a>
+        <a href="#">Marathi</a>
+        <a href="#">Gujrati</a>
+		<a href="#">Urdu</a>
+		<a href="#">American English</a>
+		<h4><b>Tools</b></h4>
+		<a href="version.html"> Version Info</a>
+		<a href="#"> Learn to Edit</a>
+		
+		<h4><b>Save As</b></h4>
+		<a onclick="alert('Nothing to print. #5')" href="#"> Print/PDF</a>
+		<a onclick="alert('Not Available')" href="#"> Source Code</a>
+		<h4><b>Contact us</b></h4>
+		<a href="mailto: arpanamishra89@gmail.com"> Mail us</a>
+		<a href="tel:+91 9522087547"> Phone Number</a>
+		<a href="#"> SMS</a>
+	 </div>
+	 
+	  
+	  
+	 <div class="main" style="font-family: verdana">
+	    <h2 id="Main"> Version <strong>A1.12</strong></h2>
+	     <hr></hr>
+	    <p> No Information</p>
+		<center>
+		
+		</center>
+	 </div>
+	 
+	 <div id="demo4" class="info">
+	  <br><br>
+	  <h2> Version A1.12</h2>
+	  <center>
+	   <img draggable="false" src="https://www.kanan.co/static/data_not_found-8ba65c1e24ea7bd4b50e0f69a4bef3f9.png" width="80%">
+	  </center>
+	</div>
+	
+   </div>
+   <div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+   
+    <span style="color: transparent;" class="close">&times;</span>
+    <input  id="myInput" onkeyup="myFunction()" autocomplete="off" type="text" placeholder="Search big cats..."> 
+	<ul id="myUL">
+  <li><a href="Siberian-Tiger.html#Main">Siberian Tiger</a></li>
+  <li><a href="Bengal-Tiger.html#Main">Bengal Tiger</a></li>
+  <li><a href="#">Sumatran Tiger</a></li>
+  <li><a href="#">African Lion</a></li>
+  <li><a href="#">Asiatic Lion</a></li>
+  <li><a href="#">Amazonal Jaguar</a></li>
+  <li><a href="#">North American Jaguar</a></li>
+  <li><a href="#">Pantanal Jaguar</a></li>
+  <li><a href="#">Cougar</a></li>
+  <li><a href="#">Indian Leopard</a></li>
+  <li><a href="#">African Leopard</a></li>
+  <li><a href="#">Amur Leopard</a></li>
+  <li><a href="#">Arabian Leopard</a></li>
+  <li><a href="#">Persian Leopard</a></li>
+  <li><a href="#">Cheetah</a></li>
+  <li><a href="#">Snow Leopard</a></li>
+  <li><a href="#">European Lynx</a></li> 
+  <li><a href="#">North American Lynx</a></li>
+  <li><a href="#">Clouded Leopard</a></li>
+     </ul>
+  </div>
+
+</div>
+  </body>
+  <script src="script.js"></script>
+  <script>
+    /*function check(e)
+    {
+    alert(e.keyCode);
+    }*/
+    document.onkeydown = function(e) {
+            if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) {//Alt+c, Alt+v will also be disabled sadly.
+                alert('Not allowed');
+            }
+            return false;
+    };
+    </script>
+</html>
